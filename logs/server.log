@@ -1,0 +1,738 @@
+11:21:55.018 [36mINFO[0m build commit=unknown time=unknown
+11:21:55.063 [90mDEBUG[0m freesrdata loaded avatars=84 dir=./configs/freesr-data.json
+11:21:55.069 [90mDEBUG[0m data loaded rows=84 table=AvatarConfig
+11:21:55.069 [90mDEBUG[0m data loaded rows=799 table=MapEntrance
+11:21:55.069 [90mDEBUG[0m data loaded rows=330 table=MazePlane
+11:21:55.075 [90mDEBUG[0m data loaded rows=1560 table=MappingInfo
+11:21:55.078 [90mDEBUG[0m data loaded rows=263 table=NPCMonsterData
+11:21:55.111 [90mDEBUG[0m data loaded rows=2403 table=MonsterConfig
+11:21:55.111 [90mDEBUG[0m data loaded rows=418 table=TeleportConfig
+11:21:55.286 [90mDEBUG[0m 默认场景楼层加载成功 floorID=20502001 groups=235
+11:21:55.316 [36mINFO[0m server started admin=127.0.0.1:18080 dispatch=0.0.0.0:21000 gameserver=0.0.0.0:23301
+11:21:55.321 [36mINFO[0m gameserver listening addr=0.0.0.0:23301 net=tcp
+11:22:12.810 [36mINFO[0m http component=dispatch dur_ms=5 method=GET path=/query_dispatch remote=127.0.0.1:53536 status=200
+11:22:12.883 [36mINFO[0m http component=dispatch dur_ms=0 method=POST path=/hkrpg_cn/combo/granter/api/compareProtocolVersion remote=127.0.0.1:53536 status=404
+11:22:12.964 [36mINFO[0m http component=dispatch dur_ms=0 method=POST path=/hkrpg_cn/combo/granter/api/compareProtocolVersion remote=127.0.0.1:53536 status=404
+11:22:13.074 [36mINFO[0m http component=dispatch dur_ms=0 method=POST path=/hkrpg_cn/combo/granter/api/compareProtocolVersion remote=127.0.0.1:53536 status=404
+11:22:13.075 [36mINFO[0m http component=dispatch dur_ms=0 method=GET path=/hkrpg_cn/mdk/shield/api/loadConfig remote=127.0.0.1:53549 status=200
+11:22:13.075 [36mINFO[0m http component=dispatch dur_ms=0 method=GET path=/hkrpg_cn/combo/granter/api/getConfig remote=127.0.0.1:53536 status=404
+11:22:13.967 [36mINFO[0m http component=dispatch dur_ms=0 method=POST path=/hkrpg_cn/combo/granter/api/compareProtocolVersion remote=127.0.0.1:53549 status=404
+11:22:14.368 [36mINFO[0m http component=dispatch dur_ms=0 method=GET path=/hkrpg_cn/combo/granter/api/getConfig remote=127.0.0.1:53549 status=404
+11:22:14.684 [36mINFO[0m http component=dispatch dur_ms=0 method=POST path=/hkrpg_cn/mdk/shield/api/verify remote=127.0.0.1:53549 status=200
+11:22:14.739 [36mINFO[0m http component=dispatch dur_ms=0 method=POST path=/hkrpg_cn/combo/granter/login/v2/login remote=127.0.0.1:53549 status=200
+11:22:14.756 [36mINFO[0m http component=dispatch dur_ms=0 method=GET path=/query_gateway remote=127.0.0.1:53549 status=200
+11:22:28.414 [36mINFO[0m gameserver accepted local=127.0.0.1:23301 net=tcp remote=127.0.0.1:59063
+11:22:28.439 [36mINFO[0m RECV bytes=93 cmd=PlayerGetTokenCsReq cmd_id=38 state=WAITING_FOR_TOKEN
+11:22:28.440 [36mINFO[0m SEND bytes=4 cmd=PlayerGetTokenScRsp cmd_id=62
+11:22:28.449 [36mINFO[0m RECV bytes=836 cmd=PlayerLoginCsReq cmd_id=57 state=WAITING_FOR_LOGIN
+11:22:28.449 [36mINFO[0m SEND bytes=30 cmd=PlayerLoginScRsp cmd_id=28
+11:22:28.450 [36mINFO[0m SEND bytes=3 cmd=StaminaInfoScNotify cmd_id=44
+11:22:28.452 [36mINFO[0m SEND bytes=1771 cmd=PlayerSyncScNotify cmd_id=657
+11:22:28.475 [36mINFO[0m RECV bytes=0 cmd=GetBasicInfoCsReq cmd_id=21 state=ACTIVE
+11:22:28.475 [36mINFO[0m SEND bytes=8 cmd=GetBasicInfoScRsp cmd_id=30
+11:22:28.476 [36mINFO[0m SEND bytes=3 cmd=SetGenderScRsp cmd_id=88
+11:22:28.479 [36mINFO[0m http component=dispatch dur_ms=0 method=GET path=/common/hkrpg_cn/announcement/api/getAlertAnn remote=127.0.0.1:53549 status=404
+11:22:28.486 [36mINFO[0m RECV bytes=0 cmd=GetBagCsReq cmd_id=557 state=ACTIVE
+11:22:28.486 [36mINFO[0m SEND bytes=0 cmd=GetBagScRsp cmd_id=528
+11:22:28.495 [36mINFO[0m http component=dispatch dur_ms=0 method=POST path=/hkrpg_cn/combo/red_dot/list remote=127.0.0.1:53549 status=404
+11:22:28.496 [36mINFO[0m RECV bytes=0 cmd=GetMarkItemListCsReq cmd_id=513 state=ACTIVE
+11:22:28.496 [36mINFO[0m SEND bytes=0 cmd=GetMarkItemListScRsp cmd_id=599
+11:22:28.496 [36mINFO[0m http component=dispatch dur_ms=0 method=GET path=/common/hkrpg_cn/announcement/api/getAlertPic remote=127.0.0.1:53536 status=404
+11:22:28.507 [36mINFO[0m RECV bytes=0 cmd=GetPlayerBoardDataCsReq cmd_id=2857 state=ACTIVE
+11:22:28.507 [36mINFO[0m SEND bytes=24 cmd=GetPlayerBoardDataScRsp cmd_id=2828
+11:22:28.519 [36mINFO[0m RECV bytes=2 cmd=GetAvatarDataCsReq cmd_id=357 state=ACTIVE
+11:22:28.521 [36mINFO[0m SEND bytes=13327 cmd=GetAvatarDataScRsp cmd_id=328
+11:22:28.530 [36mINFO[0m RECV bytes=0 cmd=RogueTournGetCurRogueCocoonInfoCsReq cmd_id=6016 state=ACTIVE
+11:22:28.530 [33mWARN[0m UNHANDLED bytes=0 cmd=RogueTournGetCurRogueCocoonInfoCsReq cmd_id=6016 known=true state=ACTIVE
+11:22:28.532 [36mINFO[0m SEND bytes=0 cmd=RogueTournGetCurRogueCocoonInfoScRsp cmd_id=6084
+11:22:28.541 [36mINFO[0m RECV bytes=0 cmd=GetCurAssistCsReq cmd_id=2913 state=ACTIVE
+11:22:28.541 [36mINFO[0m SEND bytes=0 cmd=GetCurAssistScRsp cmd_id=2999
+11:22:28.551 [36mINFO[0m RECV bytes=0 cmd=GetAllLineupDataCsReq cmd_id=789 state=ACTIVE
+11:22:28.551 [36mINFO[0m SEND bytes=354 cmd=GetAllLineupDataScRsp cmd_id=776
+11:22:28.562 [36mINFO[0m RECV bytes=0 cmd=GetAllServerPrefsDataCsReq cmd_id=6157 state=ACTIVE
+11:22:28.562 [33mWARN[0m UNHANDLED bytes=0 cmd=GetAllServerPrefsDataCsReq cmd_id=6157 known=true state=ACTIVE
+11:22:28.563 [36mINFO[0m SEND bytes=0 cmd=GetAllServerPrefsDataScRsp cmd_id=6128
+11:22:28.573 [36mINFO[0m RECV bytes=0 cmd=GetActivityScheduleConfigCsReq cmd_id=2638 state=ACTIVE
+11:22:28.573 [33mWARN[0m UNHANDLED bytes=0 cmd=GetActivityScheduleConfigCsReq cmd_id=2638 known=true state=ACTIVE
+11:22:28.573 [36mINFO[0m SEND bytes=0 cmd=GetActivityScheduleConfigScRsp cmd_id=2662
+11:22:28.584 [36mINFO[0m RECV bytes=0 cmd=GetMissionDataCsReq cmd_id=1257 state=ACTIVE
+11:22:28.623 [36mINFO[0m SEND bytes=147586 cmd=GetMissionDataScRsp cmd_id=1228
+11:22:28.624 [36mINFO[0m RECV bytes=0 cmd=GetQuestDataCsReq cmd_id=957 state=ACTIVE
+11:22:28.624 [36mINFO[0m SEND bytes=0 cmd=GetQuestDataScRsp cmd_id=928
+11:22:28.624 [36mINFO[0m RECV bytes=0 cmd=GetCurChallengeCsReq cmd_id=1705 state=ACTIVE
+11:22:28.624 [33mWARN[0m UNHANDLED bytes=0 cmd=GetCurChallengeCsReq cmd_id=1705 known=true state=ACTIVE
+11:22:28.624 [36mINFO[0m SEND bytes=0 cmd=GetCurChallengeScRsp cmd_id=1737
+11:22:28.625 [36mINFO[0m RECV bytes=6 cmd=CommonRogueQueryCsReq cmd_id=5606 state=ACTIVE
+11:22:28.625 [33mWARN[0m UNHANDLED bytes=6 cmd=CommonRogueQueryCsReq cmd_id=5606 known=true state=ACTIVE
+11:22:28.625 [36mINFO[0m SEND bytes=0 cmd=CommonRogueQueryScRsp cmd_id=5681
+11:22:28.625 [36mINFO[0m RECV bytes=0 cmd=GetRogueCommonDialogueDataCsReq cmd_id=5615 state=ACTIVE
+11:22:28.625 [33mWARN[0m UNHANDLED bytes=0 cmd=GetRogueCommonDialogueDataCsReq cmd_id=5615 known=true state=ACTIVE
+11:22:28.625 [36mINFO[0m SEND bytes=0 cmd=GetRogueCommonDialogueDataScRsp cmd_id=5691
+11:22:28.636 [36mINFO[0m RECV bytes=0 cmd=GetRogueInfoCsReq cmd_id=1857 state=ACTIVE
+11:22:28.636 [33mWARN[0m UNHANDLED bytes=0 cmd=GetRogueInfoCsReq cmd_id=1857 known=true state=ACTIVE
+11:22:28.636 [36mINFO[0m SEND bytes=0 cmd=GetRogueInfoScRsp cmd_id=1828
+11:22:28.647 [36mINFO[0m RECV bytes=0 cmd=GetRogueHandbookDataCsReq cmd_id=5652 state=ACTIVE
+11:22:28.647 [33mWARN[0m UNHANDLED bytes=0 cmd=GetRogueHandbookDataCsReq cmd_id=5652 known=true state=ACTIVE
+11:22:28.647 [36mINFO[0m SEND bytes=0 cmd=GetRogueHandbookDataScRsp cmd_id=5682
+11:22:28.657 [36mINFO[0m RECV bytes=0 cmd=GetRogueEndlessActivityDataCsReq cmd_id=6010 state=ACTIVE
+11:22:28.657 [33mWARN[0m UNHANDLED bytes=0 cmd=GetRogueEndlessActivityDataCsReq cmd_id=6010 known=true state=ACTIVE
+11:22:28.657 [36mINFO[0m SEND bytes=0 cmd=GetRogueEndlessActivityDataScRsp cmd_id=6008
+11:22:28.669 [36mINFO[0m RECV bytes=0 cmd=RogueArcadeGetInfoCsReq cmd_id=7697 state=ACTIVE
+11:22:28.669 [33mWARN[0m UNHANDLED bytes=0 cmd=RogueArcadeGetInfoCsReq cmd_id=7697 known=true state=ACTIVE
+11:22:28.669 [36mINFO[0m SEND bytes=0 cmd=RogueArcadeGetInfoScRsp cmd_id=7685
+11:22:28.679 [36mINFO[0m RECV bytes=0 cmd=ChessRogueQueryCsReq cmd_id=5583 state=ACTIVE
+11:22:28.679 [33mWARN[0m UNHANDLED bytes=0 cmd=ChessRogueQueryCsReq cmd_id=5583 known=true state=ACTIVE
+11:22:28.679 [36mINFO[0m SEND bytes=0 cmd=ChessRogueQueryScRsp cmd_id=5596
+11:22:28.689 [36mINFO[0m RECV bytes=0 cmd=RogueTournQueryCsReq cmd_id=6038 state=ACTIVE
+11:22:28.690 [33mWARN[0m UNHANDLED bytes=0 cmd=RogueTournQueryCsReq cmd_id=6038 known=true state=ACTIVE
+11:22:28.690 [36mINFO[0m SEND bytes=0 cmd=RogueTournQueryScRsp cmd_id=6061
+11:22:28.700 [36mINFO[0m RECV bytes=0 cmd=RogueMagicQueryCsReq cmd_id=7796 state=ACTIVE
+11:22:28.700 [33mWARN[0m UNHANDLED bytes=0 cmd=RogueMagicQueryCsReq cmd_id=7796 known=true state=ACTIVE
+11:22:28.700 [36mINFO[0m SEND bytes=0 cmd=RogueMagicQueryScRsp cmd_id=7780
+11:22:28.711 [36mINFO[0m RECV bytes=5 cmd=SyncClientResVersionCsReq cmd_id=147 state=ACTIVE
+11:22:28.711 [36mINFO[0m SEND bytes=5 cmd=SyncClientResVersionScRsp cmd_id=120
+11:22:28.721 [36mINFO[0m RECV bytes=0 cmd=DailyFirstMeetPamCsReq cmd_id=3455 state=ACTIVE
+11:22:28.721 [33mWARN[0m UNHANDLED bytes=0 cmd=DailyFirstMeetPamCsReq cmd_id=3455 known=true state=ACTIVE
+11:22:28.721 [36mINFO[0m SEND bytes=0 cmd=DailyFirstMeetPamScRsp cmd_id=3475
+11:22:28.732 [36mINFO[0m RECV bytes=0 cmd=GetBattleCollegeDataCsReq cmd_id=5757 state=ACTIVE
+11:22:28.732 [33mWARN[0m UNHANDLED bytes=0 cmd=GetBattleCollegeDataCsReq cmd_id=5757 known=true state=ACTIVE
+11:22:28.732 [36mINFO[0m SEND bytes=0 cmd=GetBattleCollegeDataScRsp cmd_id=5728
+11:22:28.743 [36mINFO[0m RECV bytes=0 cmd=GetNpcStatusCsReq cmd_id=2755 state=ACTIVE
+11:22:28.743 [33mWARN[0m UNHANDLED bytes=0 cmd=GetNpcStatusCsReq cmd_id=2755 known=true state=ACTIVE
+11:22:28.743 [36mINFO[0m SEND bytes=0 cmd=GetNpcStatusScRsp cmd_id=2775
+11:22:28.753 [36mINFO[0m RECV bytes=0 cmd=GetMissionMessageCsReq cmd_id=2737 state=ACTIVE
+11:22:28.753 [33mWARN[0m UNHANDLED bytes=0 cmd=GetMissionMessageCsReq cmd_id=2737 known=true state=ACTIVE
+11:22:28.753 [36mINFO[0m SEND bytes=0 cmd=GetMissionMessageScRsp cmd_id=2769
+11:22:28.763 [36mINFO[0m RECV bytes=6 cmd=GetSecretKeyInfoCsReq cmd_id=68 state=ACTIVE
+11:22:28.763 [36mINFO[0m SEND bytes=0 cmd=GetSecretKeyInfoScRsp cmd_id=43
+11:22:28.774 [36mINFO[0m RECV bytes=0 cmd=GetHeartDialInfoCsReq cmd_id=6357 state=ACTIVE
+11:22:28.774 [33mWARN[0m UNHANDLED bytes=0 cmd=GetHeartDialInfoCsReq cmd_id=6357 known=true state=ACTIVE
+11:22:28.774 [36mINFO[0m SEND bytes=0 cmd=GetHeartDialInfoScRsp cmd_id=6328
+11:22:28.784 [36mINFO[0m RECV bytes=0 cmd=GetVideoVersionKeyCsReq cmd_id=87 state=ACTIVE
+11:22:28.784 [36mINFO[0m SEND bytes=0 cmd=GetVideoVersionKeyScRsp cmd_id=24
+11:22:28.794 [36mINFO[0m RECV bytes=0 cmd=GetCurLineupDataCsReq cmd_id=755 state=ACTIVE
+11:22:28.794 [36mINFO[0m SEND bytes=106 cmd=GetCurLineupDataScRsp cmd_id=775
+11:22:28.805 [36mINFO[0m RECV bytes=0 cmd=TrainPartyGetDataCsReq cmd_id=8057 state=ACTIVE
+11:22:28.805 [33mWARN[0m UNHANDLED bytes=0 cmd=TrainPartyGetDataCsReq cmd_id=8057 known=true state=ACTIVE
+11:22:28.805 [36mINFO[0m SEND bytes=0 cmd=TrainPartyGetDataScRsp cmd_id=8028
+11:22:28.815 [36mINFO[0m RECV bytes=0 cmd=SwitchHandDataCsReq cmd_id=8110 state=ACTIVE
+11:22:28.815 [33mWARN[0m UNHANDLED bytes=0 cmd=SwitchHandDataCsReq cmd_id=8110 known=true state=ACTIVE
+11:22:28.815 [36mINFO[0m SEND bytes=0 cmd=SwitchHandDataScRsp cmd_id=8104
+11:22:28.826 [36mINFO[0m RECV bytes=0 cmd=GetCurBattleInfoCsReq cmd_id=138 state=ACTIVE
+11:22:28.826 [33mWARN[0m UNHANDLED bytes=0 cmd=GetCurBattleInfoCsReq cmd_id=138 known=true state=ACTIVE
+11:22:28.826 [36mINFO[0m SEND bytes=0 cmd=GetCurBattleInfoScRsp cmd_id=162
+11:22:28.836 [36mINFO[0m RECV bytes=0 cmd=HeliobusActivityDataCsReq cmd_id=5857 state=ACTIVE
+11:22:28.836 [33mWARN[0m UNHANDLED bytes=0 cmd=HeliobusActivityDataCsReq cmd_id=5857 known=true state=ACTIVE
+11:22:28.836 [36mINFO[0m SEND bytes=0 cmd=HeliobusActivityDataScRsp cmd_id=5828
+11:22:28.847 [36mINFO[0m RECV bytes=0 cmd=GetEnteredSceneCsReq cmd_id=1425 state=ACTIVE
+11:22:28.847 [36mINFO[0m SEND bytes=6782 cmd=EnteredSceneChangeScNotify cmd_id=1494
+11:22:28.847 [36mINFO[0m SEND bytes=6782 cmd=GetEnteredSceneScRsp cmd_id=1433
+11:22:28.857 [36mINFO[0m RECV bytes=0 cmd=GetAetherDivideInfoCsReq cmd_id=4843 state=ACTIVE
+11:22:28.858 [33mWARN[0m UNHANDLED bytes=0 cmd=GetAetherDivideInfoCsReq cmd_id=4843 known=true state=ACTIVE
+11:22:28.858 [36mINFO[0m SEND bytes=0 cmd=GetAetherDivideInfoScRsp cmd_id=4803
+11:22:28.867 [36mINFO[0m RECV bytes=0 cmd=GetMapRotationDataCsReq cmd_id=6837 state=ACTIVE
+11:22:28.867 [36mINFO[0m SEND bytes=13 cmd=GetMapRotationDataScRsp cmd_id=6869
+11:22:28.878 [36mINFO[0m RECV bytes=0 cmd=GetPetDataCsReq cmd_id=7601 state=ACTIVE
+11:22:28.878 [33mWARN[0m UNHANDLED bytes=0 cmd=GetPetDataCsReq cmd_id=7601 known=true state=ACTIVE
+11:22:28.878 [36mINFO[0m SEND bytes=0 cmd=GetPetDataScRsp cmd_id=7610
+11:22:28.889 [36mINFO[0m RECV bytes=0 cmd=QueryProductInfoCsReq cmd_id=70 state=ACTIVE
+11:22:28.889 [33mWARN[0m UNHANDLED bytes=0 cmd=QueryProductInfoCsReq cmd_id=70 known=true state=ACTIVE
+11:22:28.889 [36mINFO[0m SEND bytes=0 cmd=QueryProductInfoScRsp cmd_id=1
+11:22:28.899 [36mINFO[0m RECV bytes=745 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:28.899 [36mINFO[0m SEND bytes=1526 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:28.910 [36mINFO[0m RECV bytes=0 cmd=GetPamSkinDataCsReq cmd_id=8130 state=ACTIVE
+11:22:28.910 [36mINFO[0m SEND bytes=3 cmd=GetPamSkinDataScRsp cmd_id=8124
+11:22:28.920 [36mINFO[0m RECV bytes=0 cmd=GetGachaInfoCsReq cmd_id=1957 state=ACTIVE
+11:22:28.920 [36mINFO[0m SEND bytes=0 cmd=GetGachaInfoScRsp cmd_id=1928
+11:22:28.925 [36mINFO[0m http component=dispatch dur_ms=0 method=POST path=/hkrpg_cn/combo/red_dot/list remote=127.0.0.1:53536 status=404
+11:22:28.931 [36mINFO[0m RECV bytes=5 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:28.932 [36mINFO[0m SEND bytes=130231 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:28.941 [36mINFO[0m RECV bytes=5 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:28.944 [36mINFO[0m SEND bytes=130231 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:28.952 [36mINFO[0m RECV bytes=0 cmd=GetCurChallengePeakCsReq cmd_id=8943 state=ACTIVE
+11:22:28.952 [33mWARN[0m UNHANDLED bytes=0 cmd=GetCurChallengePeakCsReq cmd_id=8943 known=true state=ACTIVE
+11:22:28.952 [36mINFO[0m SEND bytes=0 cmd=GetCurChallengePeakScRsp cmd_id=8903
+11:22:28.962 [36mINFO[0m RECV bytes=20 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:28.962 [36mINFO[0m SEND bytes=37 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:28.972 [36mINFO[0m RECV bytes=0 cmd=GridFightGetDataCsReq cmd_id=8550 state=ACTIVE
+11:22:28.972 [33mWARN[0m UNHANDLED bytes=0 cmd=GridFightGetDataCsReq cmd_id=8550 known=true state=ACTIVE
+11:22:28.972 [36mINFO[0m SEND bytes=0 cmd=GridFightGetDataScRsp cmd_id=8578
+11:22:28.983 [36mINFO[0m RECV bytes=0 cmd=Cmd(9506) cmd_id=9506 state=ACTIVE
+11:22:28.983 [33mWARN[0m UNHANDLED bytes=0 cmd=Cmd(9506) cmd_id=9506 known=false state=ACTIVE
+11:22:28.994 [36mINFO[0m RECV bytes=11 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:28.994 [36mINFO[0m SEND bytes=19 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:29.005 [36mINFO[0m RECV bytes=0 cmd=PlayerReturnInfoQueryCsReq cmd_id=4526 state=ACTIVE
+11:22:29.005 [33mWARN[0m UNHANDLED bytes=0 cmd=PlayerReturnInfoQueryCsReq cmd_id=4526 known=true state=ACTIVE
+11:22:29.005 [36mINFO[0m SEND bytes=0 cmd=PlayerReturnInfoQueryScRsp cmd_id=4505
+11:22:29.016 [36mINFO[0m RECV bytes=0 cmd=GetCurSceneInfoCsReq cmd_id=1447 state=ACTIVE
+11:22:29.016 [90mDEBUG[0m 构建场景信息 entryID=2050201 floorID=20502001 planeID=20502 uid=1 worldID=601
+11:22:29.018 [90mDEBUG[0m 加载地图导航配置 path=Config/LevelOutput/Map/MapInfo_P20502_F20502001.json sections=22
+11:22:29.032 [90mDEBUG[0m 加载组和道具 checkpoints=6 floorID=20502001 groups=234
+11:22:29.032 [90mDEBUG[0m 添加角色实体 count=4 leaderAvatarID=8006 leaderEntityID=1
+11:22:29.035 [90mDEBUG[0m 加载地图导航配置 path=Config/LevelOutput/Map/MapInfo_P20502_F20502001.json sections=22
+11:22:29.048 [90mDEBUG[0m 加载组和道具 checkpoints=6 floorID=20502001 groups=234
+11:22:29.048 [90mDEBUG[0m 加载楼层资源成功 floorID=20502001 lightenSections=254
+11:22:29.079 [90mDEBUG[0m 添加运行时实体 count=481
+11:22:29.079 [90mDEBUG[0m 添加实体组 count=74
+11:22:29.079 [90mDEBUG[0m 添加组状态 count=99
+11:22:29.079 [90mDEBUG[0m 场景信息构建完成 entities=485 groups=74 states=99
+11:22:29.080 [36mINFO[0m SEND bytes=42359 cmd=GetCurSceneInfoScRsp cmd_id=1420
+11:22:29.081 [36mINFO[0m SEND bytes=0 cmd=SyncServerSceneChangeNotify cmd_id=1473
+11:22:29.081 [36mINFO[0m SEND bytes=3005 cmd=UnlockedAreaMapScNotify cmd_id=1459
+11:22:29.083 [90mDEBUG[0m 加载地图导航配置 path=Config/LevelOutput/Map/MapInfo_P20502_F20502001.json sections=22
+11:22:29.094 [90mDEBUG[0m 加载组和道具 checkpoints=6 floorID=20502001 groups=234
+11:22:29.095 [36mINFO[0m SEND bytes=8 cmd=UnlockTeleportNotify cmd_id=1419
+11:22:29.095 [36mINFO[0m SEND bytes=8 cmd=Cmd(1422) cmd_id=1422
+11:22:29.095 [36mINFO[0m SEND bytes=8 cmd=UnlockTeleportNotify cmd_id=1419
+11:22:29.095 [36mINFO[0m SEND bytes=8 cmd=Cmd(1422) cmd_id=1422
+11:22:29.095 [36mINFO[0m SEND bytes=8 cmd=UnlockTeleportNotify cmd_id=1419
+11:22:29.095 [36mINFO[0m SEND bytes=8 cmd=Cmd(1422) cmd_id=1422
+11:22:29.095 [36mINFO[0m SEND bytes=8 cmd=UnlockTeleportNotify cmd_id=1419
+11:22:29.096 [36mINFO[0m SEND bytes=8 cmd=Cmd(1422) cmd_id=1422
+11:22:29.096 [36mINFO[0m SEND bytes=7 cmd=UnlockTeleportNotify cmd_id=1419
+11:22:29.096 [36mINFO[0m SEND bytes=7 cmd=Cmd(1422) cmd_id=1422
+11:22:29.096 [36mINFO[0m SEND bytes=8 cmd=UnlockTeleportNotify cmd_id=1419
+11:22:29.096 [36mINFO[0m SEND bytes=8 cmd=Cmd(1422) cmd_id=1422
+11:22:29.096 [90mDEBUG[0m 构建场景信息 entryID=2050201 floorID=20502001 planeID=20502 uid=1 worldID=601
+11:22:29.099 [90mDEBUG[0m 加载地图导航配置 path=Config/LevelOutput/Map/MapInfo_P20502_F20502001.json sections=22
+11:22:29.114 [90mDEBUG[0m 加载组和道具 checkpoints=6 floorID=20502001 groups=234
+11:22:29.114 [90mDEBUG[0m 添加角色实体 count=4 leaderAvatarID=8006 leaderEntityID=1
+11:22:29.115 [90mDEBUG[0m 加载地图导航配置 path=Config/LevelOutput/Map/MapInfo_P20502_F20502001.json sections=22
+11:22:29.130 [90mDEBUG[0m 加载组和道具 checkpoints=6 floorID=20502001 groups=234
+11:22:29.130 [90mDEBUG[0m 加载楼层资源成功 floorID=20502001 lightenSections=254
+11:22:29.146 [90mDEBUG[0m 添加运行时实体 count=481
+11:22:29.146 [90mDEBUG[0m 添加实体组 count=74
+11:22:29.146 [90mDEBUG[0m 添加组状态 count=99
+11:22:29.146 [90mDEBUG[0m 场景信息构建完成 entities=485 groups=74 states=99
+11:22:29.147 [36mINFO[0m SEND bytes=42461 cmd=EnterSceneByServerScNotify cmd_id=1424
+11:22:29.147 [36mINFO[0m SEND bytes=42461 cmd=DeleteSummonUnitCsReq cmd_id=1464
+11:22:29.147 [36mINFO[0m RECV bytes=0 cmd=PlayerLoginFinishCsReq cmd_id=58 state=ACTIVE
+11:22:29.147 [36mINFO[0m SEND bytes=0 cmd=PlayerLoginFinishScRsp cmd_id=74
+11:22:29.148 [36mINFO[0m RECV bytes=0 cmd=GetLevelRewardTakenListCsReq cmd_id=96 state=ACTIVE
+11:22:29.148 [33mWARN[0m UNHANDLED bytes=0 cmd=GetLevelRewardTakenListCsReq cmd_id=96 known=true state=ACTIVE
+11:22:29.148 [36mINFO[0m SEND bytes=0 cmd=GetLevelRewardTakenListScRsp cmd_id=80
+11:22:29.148 [36mINFO[0m RECV bytes=379 cmd=GetMainMissionCustomValueCsReq cmd_id=1213 state=ACTIVE
+11:22:29.148 [36mINFO[0m SEND bytes=971 cmd=GetMainMissionCustomValueScRsp cmd_id=1299
+11:22:29.148 [36mINFO[0m RECV bytes=1145 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:29.148 [36mINFO[0m SEND bytes=2466 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:29.148 [36mINFO[0m RECV bytes=84 cmd=GetMainMissionCustomValueCsReq cmd_id=1213 state=ACTIVE
+11:22:29.149 [36mINFO[0m SEND bytes=192 cmd=GetMainMissionCustomValueScRsp cmd_id=1299
+11:22:29.149 [36mINFO[0m RECV bytes=146 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:29.149 [36mINFO[0m SEND bytes=288 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:29.149 [36mINFO[0m RECV bytes=17 cmd=GetMainMissionCustomValueCsReq cmd_id=1213 state=ACTIVE
+11:22:29.150 [36mINFO[0m SEND bytes=40 cmd=GetMainMissionCustomValueScRsp cmd_id=1299
+11:22:29.150 [36mINFO[0m RECV bytes=63 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:29.150 [36mINFO[0m SEND bytes=133 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:29.150 [36mINFO[0m RECV bytes=0 cmd=GetNpcMessageGroupCsReq cmd_id=2757 state=ACTIVE
+11:22:29.150 [33mWARN[0m UNHANDLED bytes=0 cmd=GetNpcMessageGroupCsReq cmd_id=2757 known=true state=ACTIVE
+11:22:29.151 [36mINFO[0m SEND bytes=0 cmd=GetNpcMessageGroupScRsp cmd_id=2728
+11:22:29.151 [36mINFO[0m RECV bytes=68 cmd=GetMainMissionCustomValueCsReq cmd_id=1213 state=ACTIVE
+11:22:29.151 [36mINFO[0m SEND bytes=151 cmd=GetMainMissionCustomValueScRsp cmd_id=1299
+11:22:29.151 [36mINFO[0m RECV bytes=80 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:29.151 [36mINFO[0m SEND bytes=156 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:29.151 [36mINFO[0m RECV bytes=6 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:29.152 [36mINFO[0m SEND bytes=14785 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:29.199 [36mINFO[0m RECV bytes=3 cmd=GetMatchPlayDataCsReq cmd_id=1005 state=ACTIVE
+11:22:29.199 [33mWARN[0m UNHANDLED bytes=3 cmd=GetMatchPlayDataCsReq cmd_id=1005 known=true state=ACTIVE
+11:22:29.199 [36mINFO[0m SEND bytes=0 cmd=GetMatchPlayDataScRsp cmd_id=1037
+11:22:29.209 [36mINFO[0m RECV bytes=0 cmd=GetRogueScoreRewardInfoCsReq cmd_id=1840 state=ACTIVE
+11:22:29.209 [33mWARN[0m UNHANDLED bytes=0 cmd=GetRogueScoreRewardInfoCsReq cmd_id=1840 known=true state=ACTIVE
+11:22:29.209 [36mINFO[0m SEND bytes=0 cmd=GetRogueScoreRewardInfoScRsp cmd_id=1900
+11:22:29.220 [36mINFO[0m RECV bytes=0 cmd=GetGachaInfoCsReq cmd_id=1957 state=ACTIVE
+11:22:29.220 [36mINFO[0m SEND bytes=0 cmd=GetGachaInfoScRsp cmd_id=1928
+11:22:29.236 [36mINFO[0m RECV bytes=0 cmd=GetRechargeGiftInfoCsReq cmd_id=8370 state=ACTIVE
+11:22:29.237 [33mWARN[0m UNHANDLED bytes=0 cmd=GetRechargeGiftInfoCsReq cmd_id=8370 known=true state=ACTIVE
+11:22:29.237 [36mINFO[0m SEND bytes=0 cmd=GetRechargeGiftInfoScRsp cmd_id=8364
+11:22:29.248 [36mINFO[0m RECV bytes=0 cmd=GetQuestDataCsReq cmd_id=957 state=ACTIVE
+11:22:29.248 [36mINFO[0m SEND bytes=0 cmd=GetQuestDataScRsp cmd_id=928
+11:22:29.259 [36mINFO[0m RECV bytes=0 cmd=GetQuestRecordCsReq cmd_id=947 state=ACTIVE
+11:22:29.259 [33mWARN[0m UNHANDLED bytes=0 cmd=GetQuestRecordCsReq cmd_id=947 known=true state=ACTIVE
+11:22:29.259 [36mINFO[0m SEND bytes=0 cmd=GetQuestRecordScRsp cmd_id=920
+11:22:29.270 [36mINFO[0m RECV bytes=0 cmd=GetFriendLoginInfoCsReq cmd_id=2970 state=ACTIVE
+11:22:29.270 [33mWARN[0m UNHANDLED bytes=0 cmd=GetFriendLoginInfoCsReq cmd_id=2970 known=true state=ACTIVE
+11:22:29.270 [36mINFO[0m SEND bytes=0 cmd=GetFriendLoginInfoScRsp cmd_id=2901
+11:22:29.280 [36mINFO[0m RECV bytes=0 cmd=GetCurAssistCsReq cmd_id=2913 state=ACTIVE
+11:22:29.280 [36mINFO[0m SEND bytes=0 cmd=GetCurAssistScRsp cmd_id=2999
+11:22:29.291 [36mINFO[0m RECV bytes=0 cmd=GetDailyActiveInfoCsReq cmd_id=3355 state=ACTIVE
+11:22:29.291 [36mINFO[0m SEND bytes=0 cmd=GetDailyActiveInfoScRsp cmd_id=3375
+11:22:29.302 [36mINFO[0m RECV bytes=0 cmd=GetChessRogueNousStoryInfoCsReq cmd_id=5563 state=ACTIVE
+11:22:29.302 [33mWARN[0m UNHANDLED bytes=0 cmd=GetChessRogueNousStoryInfoCsReq cmd_id=5563 known=true state=ACTIVE
+11:22:29.302 [36mINFO[0m SEND bytes=0 cmd=GetChessRogueNousStoryInfoScRsp cmd_id=5473
+11:22:29.312 [36mINFO[0m RECV bytes=0 cmd=GetFightActivityDataCsReq cmd_id=3657 state=ACTIVE
+11:22:29.312 [33mWARN[0m UNHANDLED bytes=0 cmd=GetFightActivityDataCsReq cmd_id=3657 known=true state=ACTIVE
+11:22:29.312 [36mINFO[0m SEND bytes=0 cmd=GetFightActivityDataScRsp cmd_id=3628
+11:22:29.323 [36mINFO[0m RECV bytes=0 cmd=GetStarFightDataCsReq cmd_id=7170 state=ACTIVE
+11:22:29.323 [33mWARN[0m UNHANDLED bytes=0 cmd=GetStarFightDataCsReq cmd_id=7170 known=true state=ACTIVE
+11:22:29.323 [36mINFO[0m SEND bytes=0 cmd=GetStarFightDataScRsp cmd_id=7168
+11:22:29.334 [36mINFO[0m RECV bytes=0 cmd=GetMultipleDropInfoCsReq cmd_id=4657 state=ACTIVE
+11:22:29.334 [33mWARN[0m UNHANDLED bytes=0 cmd=GetMultipleDropInfoCsReq cmd_id=4657 known=true state=ACTIVE
+11:22:29.334 [36mINFO[0m SEND bytes=0 cmd=GetMultipleDropInfoScRsp cmd_id=4628
+11:22:29.345 [36mINFO[0m RECV bytes=0 cmd=GetPlayerReturnMultiDropInfoCsReq cmd_id=4675 state=ACTIVE
+11:22:29.345 [33mWARN[0m UNHANDLED bytes=0 cmd=GetPlayerReturnMultiDropInfoCsReq cmd_id=4675 known=true state=ACTIVE
+11:22:29.345 [36mINFO[0m SEND bytes=0 cmd=GetPlayerReturnMultiDropInfoScRsp cmd_id=4638
+11:22:29.355 [36mINFO[0m RECV bytes=0 cmd=GetShareDataCsReq cmd_id=4155 state=ACTIVE
+11:22:29.355 [33mWARN[0m UNHANDLED bytes=0 cmd=GetShareDataCsReq cmd_id=4155 known=true state=ACTIVE
+11:22:29.355 [36mINFO[0m SEND bytes=0 cmd=GetShareDataScRsp cmd_id=4175
+11:22:29.366 [36mINFO[0m RECV bytes=0 cmd=GetTreasureDungeonActivityDataCsReq cmd_id=4437 state=ACTIVE
+11:22:29.366 [33mWARN[0m UNHANDLED bytes=0 cmd=GetTreasureDungeonActivityDataCsReq cmd_id=4437 known=true state=ACTIVE
+11:22:29.366 [36mINFO[0m SEND bytes=0 cmd=GetTreasureDungeonActivityDataScRsp cmd_id=4469
+11:22:29.377 [36mINFO[0m RECV bytes=0 cmd=GetEvolveBuildQueryInfoCsReq cmd_id=7150 state=ACTIVE
+11:22:29.377 [33mWARN[0m UNHANDLED bytes=0 cmd=GetEvolveBuildQueryInfoCsReq cmd_id=7150 known=true state=ACTIVE
+11:22:29.377 [36mINFO[0m SEND bytes=0 cmd=GetEvolveBuildQueryInfoScRsp cmd_id=7149
+11:22:29.388 [36mINFO[0m RECV bytes=0 cmd=GetActivityHotDataCsReq cmd_id=9120 state=ACTIVE
+11:22:29.388 [33mWARN[0m UNHANDLED bytes=0 cmd=GetActivityHotDataCsReq cmd_id=9120 known=true state=ACTIVE
+11:22:29.388 [36mINFO[0m SEND bytes=0 cmd=GetActivityHotDataScRsp cmd_id=9118
+11:22:29.399 [36mINFO[0m RECV bytes=0 cmd=GetAlleyInfoCsReq cmd_id=4757 state=ACTIVE
+11:22:29.399 [33mWARN[0m UNHANDLED bytes=0 cmd=GetAlleyInfoCsReq cmd_id=4757 known=true state=ACTIVE
+11:22:29.399 [36mINFO[0m SEND bytes=0 cmd=GetAlleyInfoScRsp cmd_id=4728
+11:22:29.410 [36mINFO[0m RECV bytes=0 cmd=GetAetherDivideChallengeInfoCsReq cmd_id=4846 state=ACTIVE
+11:22:29.410 [33mWARN[0m UNHANDLED bytes=0 cmd=GetAetherDivideChallengeInfoCsReq cmd_id=4846 known=true state=ACTIVE
+11:22:29.410 [36mINFO[0m SEND bytes=0 cmd=GetAetherDivideChallengeInfoScRsp cmd_id=4845
+11:22:29.420 [36mINFO[0m RECV bytes=0 cmd=JAIIEBGFHKM cmd_id=6657 state=ACTIVE
+11:22:29.420 [33mWARN[0m UNHANDLED bytes=0 cmd=JAIIEBGFHKM cmd_id=6657 known=true state=ACTIVE
+11:22:29.431 [36mINFO[0m RECV bytes=16 cmd=GetOfferingInfoCsReq cmd_id=6930 state=ACTIVE
+11:22:29.431 [33mWARN[0m UNHANDLED bytes=16 cmd=GetOfferingInfoCsReq cmd_id=6930 known=true state=ACTIVE
+11:22:29.431 [36mINFO[0m SEND bytes=0 cmd=GetOfferingInfoScRsp cmd_id=6924
+11:22:29.442 [36mINFO[0m RECV bytes=0 cmd=ClockParkGetInfoCsReq cmd_id=7250 state=ACTIVE
+11:22:29.442 [33mWARN[0m UNHANDLED bytes=0 cmd=ClockParkGetInfoCsReq cmd_id=7250 known=true state=ACTIVE
+11:22:29.442 [36mINFO[0m SEND bytes=0 cmd=ClockParkGetInfoScRsp cmd_id=7249
+11:22:29.453 [36mINFO[0m RECV bytes=0 cmd=MusicRhythmDataCsReq cmd_id=7589 state=ACTIVE
+11:22:29.453 [33mWARN[0m UNHANDLED bytes=0 cmd=MusicRhythmDataCsReq cmd_id=7589 known=true state=ACTIVE
+11:22:29.453 [36mINFO[0m SEND bytes=0 cmd=MusicRhythmDataScRsp cmd_id=7590
+11:22:29.463 [36mINFO[0m RECV bytes=0 cmd=GetWolfBroShootingDataCsReq cmd_id=4114 state=ACTIVE
+11:22:29.463 [33mWARN[0m UNHANDLED bytes=0 cmd=GetWolfBroShootingDataCsReq cmd_id=4114 known=true state=ACTIVE
+11:22:29.463 [36mINFO[0m SEND bytes=0 cmd=GetWolfBroShootingDataScRsp cmd_id=4112
+11:22:29.474 [36mINFO[0m RECV bytes=0 cmd=GetTrackPhotoActivityDataCsReq cmd_id=7560 state=ACTIVE
+11:22:29.474 [33mWARN[0m UNHANDLED bytes=0 cmd=GetTrackPhotoActivityDataCsReq cmd_id=7560 known=true state=ACTIVE
+11:22:29.474 [36mINFO[0m SEND bytes=0 cmd=GetTrackPhotoActivityDataScRsp cmd_id=7558
+11:22:29.485 [36mINFO[0m RECV bytes=0 cmd=GetSwordTrainingDataCsReq cmd_id=7499 state=ACTIVE
+11:22:29.485 [33mWARN[0m UNHANDLED bytes=0 cmd=GetSwordTrainingDataCsReq cmd_id=7499 known=true state=ACTIVE
+11:22:29.485 [36mINFO[0m SEND bytes=0 cmd=GetSwordTrainingDataScRsp cmd_id=7474
+11:22:29.496 [36mINFO[0m RECV bytes=0 cmd=GetFightFestDataCsReq cmd_id=7300 state=ACTIVE
+11:22:29.496 [33mWARN[0m UNHANDLED bytes=0 cmd=GetFightFestDataCsReq cmd_id=7300 known=true state=ACTIVE
+11:22:29.496 [36mINFO[0m SEND bytes=0 cmd=GetFightFestDataScRsp cmd_id=7299
+11:22:29.507 [36mINFO[0m RECV bytes=0 cmd=GetSwitchMascotDataCsReq cmd_id=4182 state=ACTIVE
+11:22:29.507 [36mINFO[0m SEND bytes=0 cmd=GetSwitchMascotDataScRsp cmd_id=4188
+11:22:29.517 [36mINFO[0m RECV bytes=0 cmd=DifficultyAdjustmentGetDataCsReq cmd_id=4109 state=ACTIVE
+11:22:29.517 [33mWARN[0m UNHANDLED bytes=0 cmd=DifficultyAdjustmentGetDataCsReq cmd_id=4109 known=true state=ACTIVE
+11:22:29.517 [36mINFO[0m SEND bytes=0 cmd=DifficultyAdjustmentGetDataScRsp cmd_id=4185
+11:22:29.529 [36mINFO[0m RECV bytes=0 cmd=ChimeraGetDataCsReq cmd_id=8170 state=ACTIVE
+11:22:29.529 [33mWARN[0m UNHANDLED bytes=0 cmd=ChimeraGetDataCsReq cmd_id=8170 known=true state=ACTIVE
+11:22:29.529 [36mINFO[0m SEND bytes=0 cmd=ChimeraGetDataScRsp cmd_id=8164
+11:22:29.539 [36mINFO[0m RECV bytes=0 cmd=ChimeraDuelGetDataCsReq cmd_id=9260 state=ACTIVE
+11:22:29.539 [33mWARN[0m UNHANDLED bytes=0 cmd=ChimeraDuelGetDataCsReq cmd_id=9260 known=true state=ACTIVE
+11:22:29.539 [36mINFO[0m SEND bytes=0 cmd=ChimeraDuelGetDataScRsp cmd_id=9259
+11:22:29.550 [36mINFO[0m RECV bytes=0 cmd=MarbleGetDataCsReq cmd_id=8280 state=ACTIVE
+11:22:29.550 [33mWARN[0m UNHANDLED bytes=0 cmd=MarbleGetDataCsReq cmd_id=8280 known=true state=ACTIVE
+11:22:29.550 [36mINFO[0m SEND bytes=0 cmd=MarbleGetDataScRsp cmd_id=8274
+11:22:29.560 [36mINFO[0m RECV bytes=3 cmd=GetMatchPlayDataCsReq cmd_id=1005 state=ACTIVE
+11:22:29.560 [33mWARN[0m UNHANDLED bytes=3 cmd=GetMatchPlayDataCsReq cmd_id=1005 known=true state=ACTIVE
+11:22:29.560 [36mINFO[0m SEND bytes=0 cmd=GetMatchPlayDataScRsp cmd_id=1037
+11:22:29.572 [36mINFO[0m RECV bytes=0 cmd=Cmd(2266) cmd_id=2266 state=ACTIVE
+11:22:29.572 [33mWARN[0m UNHANDLED bytes=0 cmd=Cmd(2266) cmd_id=2266 known=false state=ACTIVE
+11:22:29.582 [36mINFO[0m RECV bytes=0 cmd=Cmd(2251) cmd_id=2251 state=ACTIVE
+11:22:29.582 [33mWARN[0m UNHANDLED bytes=0 cmd=Cmd(2251) cmd_id=2251 known=false state=ACTIVE
+11:22:29.593 [36mINFO[0m RECV bytes=0 cmd=Cmd(9051) cmd_id=9051 state=ACTIVE
+11:22:29.593 [33mWARN[0m UNHANDLED bytes=0 cmd=Cmd(9051) cmd_id=9051 known=false state=ACTIVE
+11:22:29.604 [36mINFO[0m RECV bytes=0 cmd=Cmd(9081) cmd_id=9081 state=ACTIVE
+11:22:29.604 [33mWARN[0m UNHANDLED bytes=0 cmd=Cmd(9081) cmd_id=9081 known=false state=ACTIVE
+11:22:29.614 [36mINFO[0m RECV bytes=0 cmd=GetPamSkinDataCsReq cmd_id=8130 state=ACTIVE
+11:22:29.614 [36mINFO[0m SEND bytes=3 cmd=GetPamSkinDataScRsp cmd_id=8124
+11:22:29.625 [36mINFO[0m RECV bytes=0 cmd=GetRechargeBenefitInfoCsReq cmd_id=8372 state=ACTIVE
+11:22:29.625 [33mWARN[0m UNHANDLED bytes=0 cmd=GetRechargeBenefitInfoCsReq cmd_id=8372 known=true state=ACTIVE
+11:22:29.625 [36mINFO[0m SEND bytes=0 cmd=GetRechargeBenefitInfoScRsp cmd_id=8371
+11:22:29.636 [36mINFO[0m RECV bytes=0 cmd=GetDiceCombatSystemDataCsReq cmd_id=9286 state=ACTIVE
+11:22:29.636 [33mWARN[0m UNHANDLED bytes=0 cmd=GetDiceCombatSystemDataCsReq cmd_id=9286 known=true state=ACTIVE
+11:22:29.636 [36mINFO[0m SEND bytes=0 cmd=GetDiceCombatSystemDataScRsp cmd_id=9300
+11:22:29.646 [36mINFO[0m RECV bytes=3 cmd=GetMatchPlayDataCsReq cmd_id=1005 state=ACTIVE
+11:22:29.646 [33mWARN[0m UNHANDLED bytes=3 cmd=GetMatchPlayDataCsReq cmd_id=1005 known=true state=ACTIVE
+11:22:29.646 [36mINFO[0m SEND bytes=0 cmd=GetMatchPlayDataScRsp cmd_id=1037
+11:22:29.656 [36mINFO[0m RECV bytes=0 cmd=GetHipplenDataCsReq cmd_id=9050 state=ACTIVE
+11:22:29.656 [33mWARN[0m UNHANDLED bytes=0 cmd=GetHipplenDataCsReq cmd_id=9050 known=true state=ACTIVE
+11:22:29.656 [36mINFO[0m SEND bytes=0 cmd=GetHipplenDataScRsp cmd_id=9049
+11:22:29.667 [36mINFO[0m RECV bytes=0 cmd=GetLocalLegendDataCsReq cmd_id=6576 state=ACTIVE
+11:22:29.667 [33mWARN[0m UNHANDLED bytes=0 cmd=GetLocalLegendDataCsReq cmd_id=6576 known=true state=ACTIVE
+11:22:29.667 [36mINFO[0m SEND bytes=0 cmd=GetLocalLegendDataScRsp cmd_id=6585
+11:22:29.677 [36mINFO[0m RECV bytes=0 cmd=GetActiveActivityDataCsReq cmd_id=9560 state=ACTIVE
+11:22:29.677 [33mWARN[0m UNHANDLED bytes=0 cmd=GetActiveActivityDataCsReq cmd_id=9560 known=true state=ACTIVE
+11:22:29.677 [36mINFO[0m SEND bytes=0 cmd=GetActiveActivityDataScRsp cmd_id=9554
+11:22:29.687 [36mINFO[0m RECV bytes=0 cmd=SpaceZooDataCsReq cmd_id=6757 state=ACTIVE
+11:22:29.687 [33mWARN[0m UNHANDLED bytes=0 cmd=SpaceZooDataCsReq cmd_id=6757 known=true state=ACTIVE
+11:22:29.687 [36mINFO[0m SEND bytes=0 cmd=SpaceZooDataScRsp cmd_id=6728
+11:22:29.698 [36mINFO[0m RECV bytes=0 cmd=GetMaterialSubmitActivityDataCsReq cmd_id=2695 state=ACTIVE
+11:22:29.698 [33mWARN[0m UNHANDLED bytes=0 cmd=GetMaterialSubmitActivityDataCsReq cmd_id=2695 known=true state=ACTIVE
+11:22:29.698 [36mINFO[0m SEND bytes=0 cmd=GetMaterialSubmitActivityDataScRsp cmd_id=2634
+11:22:29.709 [36mINFO[0m RECV bytes=0 cmd=GetExpeditionDataCsReq cmd_id=2550 state=ACTIVE
+11:22:29.709 [33mWARN[0m UNHANDLED bytes=0 cmd=GetExpeditionDataCsReq cmd_id=2550 known=true state=ACTIVE
+11:22:29.709 [36mINFO[0m SEND bytes=0 cmd=GetExpeditionDataScRsp cmd_id=2549
+11:22:29.719 [36mINFO[0m RECV bytes=0 cmd=GetPreAvatarActivityListCsReq cmd_id=388 state=ACTIVE
+11:22:29.719 [33mWARN[0m UNHANDLED bytes=0 cmd=GetPreAvatarActivityListCsReq cmd_id=388 known=true state=ACTIVE
+11:22:29.719 [36mINFO[0m SEND bytes=0 cmd=GetPreAvatarActivityListScRsp cmd_id=351
+11:22:29.730 [36mINFO[0m RECV bytes=0 cmd=TravelBrochureGetDataCsReq cmd_id=6457 state=ACTIVE
+11:22:29.730 [33mWARN[0m UNHANDLED bytes=0 cmd=TravelBrochureGetDataCsReq cmd_id=6457 known=true state=ACTIVE
+11:22:29.730 [36mINFO[0m SEND bytes=0 cmd=TravelBrochureGetDataScRsp cmd_id=6428
+11:22:29.741 [36mINFO[0m RECV bytes=0 cmd=RaidCollectionDataCsReq cmd_id=6950 state=ACTIVE
+11:22:29.741 [33mWARN[0m UNHANDLED bytes=0 cmd=RaidCollectionDataCsReq cmd_id=6950 known=true state=ACTIVE
+11:22:29.741 [36mINFO[0m SEND bytes=0 cmd=RaidCollectionDataScRsp cmd_id=6944
+11:22:29.751 [36mINFO[0m RECV bytes=0 cmd=GetChatEmojiListCsReq cmd_id=3926 state=ACTIVE
+11:22:29.751 [36mINFO[0m SEND bytes=0 cmd=GetChatEmojiListScRsp cmd_id=3905
+11:22:29.762 [36mINFO[0m RECV bytes=0 cmd=GetChallengeCsReq cmd_id=1757 state=ACTIVE
+11:22:29.762 [33mWARN[0m UNHANDLED bytes=0 cmd=GetChallengeCsReq cmd_id=1757 known=true state=ACTIVE
+11:22:29.762 [36mINFO[0m SEND bytes=0 cmd=GetChallengeScRsp cmd_id=1728
+11:22:29.773 [36mINFO[0m RECV bytes=0 cmd=GetRaidInfoCsReq cmd_id=2243 state=ACTIVE
+11:22:29.773 [33mWARN[0m UNHANDLED bytes=0 cmd=GetRaidInfoCsReq cmd_id=2243 known=true state=ACTIVE
+11:22:29.773 [36mINFO[0m SEND bytes=0 cmd=GetRaidInfoScRsp cmd_id=2203
+11:22:29.784 [36mINFO[0m RECV bytes=0 cmd=GetLoginActivityCsReq cmd_id=2657 state=ACTIVE
+11:22:29.784 [33mWARN[0m UNHANDLED bytes=0 cmd=GetLoginActivityCsReq cmd_id=2657 known=true state=ACTIVE
+11:22:29.784 [36mINFO[0m SEND bytes=0 cmd=GetLoginActivityScRsp cmd_id=2628
+11:22:29.795 [36mINFO[0m RECV bytes=0 cmd=GetTrialActivityDataCsReq cmd_id=2692 state=ACTIVE
+11:22:29.795 [33mWARN[0m UNHANDLED bytes=0 cmd=GetTrialActivityDataCsReq cmd_id=2692 known=true state=ACTIVE
+11:22:29.795 [36mINFO[0m SEND bytes=0 cmd=GetTrialActivityDataScRsp cmd_id=2602
+11:22:29.805 [36mINFO[0m RECV bytes=0 cmd=GetJukeboxDataCsReq cmd_id=3157 state=ACTIVE
+11:22:29.805 [33mWARN[0m UNHANDLED bytes=0 cmd=GetJukeboxDataCsReq cmd_id=3157 known=true state=ACTIVE
+11:22:29.805 [36mINFO[0m SEND bytes=0 cmd=GetJukeboxDataScRsp cmd_id=3128
+11:22:29.816 [36mINFO[0m RECV bytes=0 cmd=GetMuseumInfoCsReq cmd_id=4357 state=ACTIVE
+11:22:29.816 [33mWARN[0m UNHANDLED bytes=0 cmd=GetMuseumInfoCsReq cmd_id=4357 known=true state=ACTIVE
+11:22:29.816 [36mINFO[0m SEND bytes=0 cmd=GetMuseumInfoScRsp cmd_id=4328
+11:22:29.827 [36mINFO[0m RECV bytes=0 cmd=GetTelevisionActivityDataCsReq cmd_id=6970 state=ACTIVE
+11:22:29.827 [33mWARN[0m UNHANDLED bytes=0 cmd=GetTelevisionActivityDataCsReq cmd_id=6970 known=true state=ACTIVE
+11:22:29.827 [36mINFO[0m SEND bytes=0 cmd=GetTelevisionActivityDataScRsp cmd_id=6964
+11:22:29.837 [36mINFO[0m RECV bytes=2 cmd=GetTrainVisitorRegisterCsReq cmd_id=3747 state=ACTIVE
+11:22:29.837 [33mWARN[0m UNHANDLED bytes=2 cmd=GetTrainVisitorRegisterCsReq cmd_id=3747 known=true state=ACTIVE
+11:22:29.837 [36mINFO[0m SEND bytes=0 cmd=GetTrainVisitorRegisterScRsp cmd_id=3720
+11:22:29.847 [36mINFO[0m RECV bytes=0 cmd=GetBoxingClubInfoCsReq cmd_id=4257 state=ACTIVE
+11:22:29.847 [33mWARN[0m UNHANDLED bytes=0 cmd=GetBoxingClubInfoCsReq cmd_id=4257 known=true state=ACTIVE
+11:22:29.847 [36mINFO[0m SEND bytes=0 cmd=GetBoxingClubInfoScRsp cmd_id=4228
+11:22:29.858 [36mINFO[0m RECV bytes=229 cmd=TextJoinQueryCsReq cmd_id=3855 state=ACTIVE
+11:22:29.858 [33mWARN[0m UNHANDLED bytes=229 cmd=TextJoinQueryCsReq cmd_id=3855 known=true state=ACTIVE
+11:22:29.858 [36mINFO[0m SEND bytes=0 cmd=TextJoinQueryScRsp cmd_id=3875
+11:22:29.869 [36mINFO[0m RECV bytes=0 cmd=GetDailyActiveInfoCsReq cmd_id=3355 state=ACTIVE
+11:22:29.869 [36mINFO[0m SEND bytes=0 cmd=GetDailyActiveInfoScRsp cmd_id=3375
+11:22:29.879 [36mINFO[0m RECV bytes=0 cmd=GetLoginChatInfoCsReq cmd_id=3945 state=ACTIVE
+11:22:29.879 [36mINFO[0m SEND bytes=0 cmd=GetLoginChatInfoScRsp cmd_id=3983
+11:22:29.889 [36mINFO[0m RECV bytes=0 cmd=GetChatFriendHistoryCsReq cmd_id=3947 state=ACTIVE
+11:22:29.889 [36mINFO[0m SEND bytes=0 cmd=GetChatFriendHistoryScRsp cmd_id=3920
+11:22:29.900 [36mINFO[0m RECV bytes=0 cmd=GetPhoneDataCsReq cmd_id=5157 state=ACTIVE
+11:22:29.900 [36mINFO[0m SEND bytes=0 cmd=GetPhoneDataScRsp cmd_id=5128
+11:22:29.985 [36mINFO[0m RECV bytes=0 cmd=GetFeverTimeActivityDataCsReq cmd_id=7155 state=ACTIVE
+11:22:29.985 [33mWARN[0m UNHANDLED bytes=0 cmd=GetFeverTimeActivityDataCsReq cmd_id=7155 known=true state=ACTIVE
+11:22:29.985 [36mINFO[0m SEND bytes=0 cmd=GetFeverTimeActivityDataScRsp cmd_id=7159
+11:22:29.997 [36mINFO[0m RECV bytes=0 cmd=GetRelicBoxDataCsReq cmd_id=8960 state=ACTIVE
+11:22:29.997 [33mWARN[0m UNHANDLED bytes=0 cmd=GetRelicBoxDataCsReq cmd_id=8960 known=true state=ACTIVE
+11:22:29.997 [36mINFO[0m SEND bytes=0 cmd=GetRelicBoxDataScRsp cmd_id=8954
+11:22:30.007 [36mINFO[0m RECV bytes=0 cmd=GetSummonActivityDataCsReq cmd_id=7570 state=ACTIVE
+11:22:30.007 [33mWARN[0m UNHANDLED bytes=0 cmd=GetSummonActivityDataCsReq cmd_id=7570 known=true state=ACTIVE
+11:22:30.007 [36mINFO[0m SEND bytes=0 cmd=GetSummonActivityDataScRsp cmd_id=7568
+11:22:30.018 [36mINFO[0m RECV bytes=0 cmd=TarotBookGetDataCsReq cmd_id=8150 state=ACTIVE
+11:22:30.018 [33mWARN[0m UNHANDLED bytes=0 cmd=TarotBookGetDataCsReq cmd_id=8150 known=true state=ACTIVE
+11:22:30.018 [36mINFO[0m SEND bytes=0 cmd=TarotBookGetDataScRsp cmd_id=8144
+11:22:30.029 [36mINFO[0m RECV bytes=0 cmd=GetMarkChestCsReq cmd_id=8190 state=ACTIVE
+11:22:30.029 [36mINFO[0m SEND bytes=0 cmd=GetMarkChestScRsp cmd_id=8184
+11:22:30.040 [36mINFO[0m RECV bytes=0 cmd=GetChallengePeakDataCsReq cmd_id=8950 state=ACTIVE
+11:22:30.040 [33mWARN[0m UNHANDLED bytes=0 cmd=GetChallengePeakDataCsReq cmd_id=8950 known=true state=ACTIVE
+11:22:30.040 [36mINFO[0m SEND bytes=0 cmd=GetChallengePeakDataScRsp cmd_id=8949
+11:22:30.050 [36mINFO[0m RECV bytes=0 cmd=Cmd(9199) cmd_id=9199 state=ACTIVE
+11:22:30.050 [33mWARN[0m UNHANDLED bytes=0 cmd=Cmd(9199) cmd_id=9199 known=false state=ACTIVE
+11:22:30.061 [36mINFO[0m RECV bytes=7 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 state=ACTIVE
+11:22:30.061 [33mWARN[0m UNHANDLED bytes=7 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 known=true state=ACTIVE
+11:22:30.061 [36mINFO[0m SEND bytes=0 cmd=UpdateServerPrefsDataScRsp cmd_id=6162
+11:22:30.071 [36mINFO[0m RECV bytes=7 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 state=ACTIVE
+11:22:30.071 [33mWARN[0m UNHANDLED bytes=7 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 known=true state=ACTIVE
+11:22:30.071 [36mINFO[0m SEND bytes=0 cmd=UpdateServerPrefsDataScRsp cmd_id=6162
+11:22:30.082 [36mINFO[0m RECV bytes=7 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 state=ACTIVE
+11:22:30.082 [33mWARN[0m UNHANDLED bytes=7 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 known=true state=ACTIVE
+11:22:30.082 [36mINFO[0m SEND bytes=0 cmd=UpdateServerPrefsDataScRsp cmd_id=6162
+11:22:30.093 [36mINFO[0m RECV bytes=7 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 state=ACTIVE
+11:22:30.093 [33mWARN[0m UNHANDLED bytes=7 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 known=true state=ACTIVE
+11:22:30.093 [36mINFO[0m SEND bytes=0 cmd=UpdateServerPrefsDataScRsp cmd_id=6162
+11:22:30.104 [36mINFO[0m RECV bytes=7 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 state=ACTIVE
+11:22:30.104 [33mWARN[0m UNHANDLED bytes=7 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 known=true state=ACTIVE
+11:22:30.104 [36mINFO[0m SEND bytes=0 cmd=UpdateServerPrefsDataScRsp cmd_id=6162
+11:22:30.115 [36mINFO[0m RECV bytes=8 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 state=ACTIVE
+11:22:30.115 [33mWARN[0m UNHANDLED bytes=8 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 known=true state=ACTIVE
+11:22:30.115 [36mINFO[0m SEND bytes=0 cmd=UpdateServerPrefsDataScRsp cmd_id=6162
+11:22:30.125 [36mINFO[0m RECV bytes=8 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 state=ACTIVE
+11:22:30.125 [33mWARN[0m UNHANDLED bytes=8 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 known=true state=ACTIVE
+11:22:30.125 [36mINFO[0m SEND bytes=0 cmd=UpdateServerPrefsDataScRsp cmd_id=6162
+11:22:30.126 [36mINFO[0m http component=dispatch dur_ms=0 method=GET path=/common/hkrpg_cn/announcement/api/getAlertAnn remote=127.0.0.1:53536 status=404
+11:22:30.134 [36mINFO[0m http component=dispatch dur_ms=0 method=GET path=/common/hkrpg_cn/announcement/api/getAlertPic remote=127.0.0.1:53536 status=404
+11:22:30.135 [36mINFO[0m RECV bytes=479 cmd=GetMainMissionCustomValueCsReq cmd_id=1213 state=ACTIVE
+11:22:30.135 [36mINFO[0m SEND bytes=1096 cmd=GetMainMissionCustomValueScRsp cmd_id=1299
+11:22:30.146 [36mINFO[0m RECV bytes=2632 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:30.146 [36mINFO[0m SEND bytes=5366 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:30.157 [36mINFO[0m RECV bytes=0 cmd=GetTutorialCsReq cmd_id=1657 state=ACTIVE
+11:22:30.162 [36mINFO[0m SEND bytes=7462 cmd=GetTutorialScRsp cmd_id=1628
+11:22:30.168 [36mINFO[0m RECV bytes=0 cmd=GetTutorialGuideCsReq cmd_id=1655 state=ACTIVE
+11:22:30.168 [36mINFO[0m SEND bytes=0 cmd=GetTutorialGuideScRsp cmd_id=1675
+11:22:30.179 [36mINFO[0m RECV bytes=2 cmd=GetMailCsReq cmd_id=857 state=ACTIVE
+11:22:30.179 [33mWARN[0m UNHANDLED bytes=2 cmd=GetMailCsReq cmd_id=857 known=true state=ACTIVE
+11:22:30.179 [36mINFO[0m SEND bytes=0 cmd=GetMailScRsp cmd_id=828
+11:22:30.189 [36mINFO[0m RECV bytes=0 cmd=GetShopListCsReq cmd_id=1557 state=ACTIVE
+11:22:30.189 [33mWARN[0m UNHANDLED bytes=0 cmd=GetShopListCsReq cmd_id=1557 known=true state=ACTIVE
+11:22:30.189 [36mINFO[0m SEND bytes=0 cmd=GetShopListScRsp cmd_id=1528
+11:22:30.701 [36mINFO[0m http component=dispatch dur_ms=0 method=POST path=/sdk_global/marker/api/genMark remote=127.0.0.1:53536 status=404
+11:22:30.879 [36mINFO[0m RECV bytes=15 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 state=ACTIVE
+11:22:30.879 [33mWARN[0m UNHANDLED bytes=15 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 known=true state=ACTIVE
+11:22:30.879 [36mINFO[0m SEND bytes=0 cmd=UpdateServerPrefsDataScRsp cmd_id=6162
+11:22:30.889 [36mINFO[0m RECV bytes=23 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 state=ACTIVE
+11:22:30.889 [33mWARN[0m UNHANDLED bytes=23 cmd=UpdateServerPrefsDataCsReq cmd_id=6138 known=true state=ACTIVE
+11:22:30.889 [36mINFO[0m SEND bytes=0 cmd=UpdateServerPrefsDataScRsp cmd_id=6162
+11:22:30.996 [36mINFO[0m RECV bytes=0 cmd=GetAllSaveRaidCsReq cmd_id=2201 state=ACTIVE
+11:22:30.996 [33mWARN[0m UNHANDLED bytes=0 cmd=GetAllSaveRaidCsReq cmd_id=2201 known=true state=ACTIVE
+11:22:30.996 [36mINFO[0m SEND bytes=0 cmd=GetAllSaveRaidScRsp cmd_id=2220
+11:22:31.359 [36mINFO[0m RECV bytes=0 cmd=MatchThreeGetDataDataCsReq cmd_id=7450 state=ACTIVE
+11:22:31.359 [33mWARN[0m UNHANDLED bytes=0 cmd=MatchThreeGetDataDataCsReq cmd_id=7450 known=true state=ACTIVE
+11:22:31.359 [36mINFO[0m SEND bytes=0 cmd=MatchThreeGetDataDataScRsp cmd_id=7449
+11:22:31.370 [36mINFO[0m RECV bytes=0 cmd=GetDrinkMakerDataCsReq cmd_id=6990 state=ACTIVE
+11:22:31.370 [33mWARN[0m UNHANDLED bytes=0 cmd=GetDrinkMakerDataCsReq cmd_id=6990 known=true state=ACTIVE
+11:22:31.370 [36mINFO[0m SEND bytes=0 cmd=GetDrinkMakerDataScRsp cmd_id=6984
+11:22:31.676 [36mINFO[0m RECV bytes=18 cmd=GetMissionStatusCsReq cmd_id=1289 state=ACTIVE
+11:22:31.676 [36mINFO[0m SEND bytes=14812 cmd=GetMissionStatusScRsp cmd_id=1276
+11:22:31.767 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.767 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.778 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.778 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.788 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.788 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.799 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.799 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.809 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.809 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.821 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.821 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.831 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.831 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.842 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.842 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.853 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.853 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.864 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.864 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.875 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.875 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.885 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.885 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.896 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.896 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.907 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.907 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.917 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.917 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.929 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.930 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.939 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.940 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.950 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.950 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.960 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.960 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.971 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.971 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.981 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.981 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:31.992 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:31.992 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.003 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.003 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.014 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.014 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.025 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.025 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.036 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.036 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.046 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.046 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.057 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.057 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.067 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.067 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.077 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.077 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.088 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.088 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.099 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.099 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.109 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.109 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.119 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.119 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.131 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.131 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.142 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.142 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.152 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.152 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.163 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.163 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.174 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.174 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.184 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.184 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.195 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.195 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.205 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.205 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.216 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.216 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.227 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.227 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.238 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.238 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.249 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.249 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.259 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.259 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.270 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.270 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.285 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.286 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.296 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.296 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.306 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.306 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.317 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.317 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.327 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.327 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.338 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.338 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.348 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.348 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.358 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.358 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.369 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.369 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.379 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.379 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.389 [36mINFO[0m http component=dispatch dur_ms=0 method=POST path=/sdk_global/marker/api/genMark remote=127.0.0.1:53536 status=404
+11:22:32.390 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.390 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.400 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.400 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.411 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.411 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.422 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.422 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.433 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.433 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.443 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.443 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.453 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.453 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.464 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.464 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.475 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.475 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.485 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.485 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.496 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.496 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.507 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.507 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.518 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.518 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.528 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.528 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.538 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.538 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.549 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.549 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.560 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.560 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.571 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.571 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.582 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.582 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.593 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.593 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.604 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.604 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.615 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.615 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.626 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.626 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.637 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.637 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.649 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.649 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.660 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.660 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.671 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.671 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.682 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.682 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.692 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.692 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.703 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.703 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.714 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.714 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.724 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.724 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.735 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.736 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.746 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.746 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.756 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.756 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.767 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.767 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.778 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.778 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.788 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.788 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.799 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.799 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.810 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.810 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.821 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.821 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.831 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.831 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.842 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.842 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.852 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.852 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.863 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.863 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.874 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.874 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.884 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.884 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.894 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.894 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.905 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.905 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.919 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.919 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.930 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.930 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.940 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.940 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.951 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.951 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.962 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.962 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:32.973 [36mINFO[0m RECV bytes=3 cmd=UnlockTutorialGuideCsReq cmd_id=1647 state=ACTIVE
+11:22:32.973 [36mINFO[0m SEND bytes=7 cmd=UnlockTutorialGuideScRsp cmd_id=1620
+11:22:34.817 [36mINFO[0m RECV bytes=7 cmd=PlayerHeartBeatCsReq cmd_id=97 state=ACTIVE
+11:22:34.817 [36mINFO[0m SEND bytes=14 cmd=PlayerHeartBeatScRsp cmd_id=15
+11:22:39.824 [36mINFO[0m RECV bytes=7 cmd=PlayerHeartBeatCsReq cmd_id=97 state=ACTIVE
+11:22:39.824 [36mINFO[0m SEND bytes=14 cmd=PlayerHeartBeatScRsp cmd_id=15
+11:22:44.832 [36mINFO[0m RECV bytes=7 cmd=PlayerHeartBeatCsReq cmd_id=97 state=ACTIVE
+11:22:44.832 [36mINFO[0m SEND bytes=14 cmd=PlayerHeartBeatScRsp cmd_id=15
+11:22:49.845 [36mINFO[0m RECV bytes=7 cmd=PlayerHeartBeatCsReq cmd_id=97 state=ACTIVE
+11:22:49.845 [36mINFO[0m SEND bytes=14 cmd=PlayerHeartBeatScRsp cmd_id=15
+11:22:54.847 [36mINFO[0m RECV bytes=7 cmd=PlayerHeartBeatCsReq cmd_id=97 state=ACTIVE
+11:22:54.847 [36mINFO[0m SEND bytes=14 cmd=PlayerHeartBeatScRsp cmd_id=15
+11:22:59.861 [36mINFO[0m RECV bytes=7 cmd=PlayerHeartBeatCsReq cmd_id=97 state=ACTIVE
+11:22:59.861 [36mINFO[0m SEND bytes=14 cmd=PlayerHeartBeatScRsp cmd_id=15
+11:23:04.868 [36mINFO[0m RECV bytes=7 cmd=PlayerHeartBeatCsReq cmd_id=97 state=ACTIVE
+11:23:04.868 [36mINFO[0m SEND bytes=14 cmd=PlayerHeartBeatScRsp cmd_id=15
+11:23:08.750 [36mINFO[0m RECV bytes=0 cmd=PlayerLogoutCsReq cmd_id=55 state=ACTIVE
+11:23:08.750 [33mWARN[0m UNHANDLED bytes=0 cmd=PlayerLogoutCsReq cmd_id=55 known=true state=ACTIVE
+11:23:08.760 [36mINFO[0m RECV bytes=0 cmd=SwitchHandDataCsReq cmd_id=8110 state=ACTIVE
+11:23:08.760 [33mWARN[0m UNHANDLED bytes=0 cmd=SwitchHandDataCsReq cmd_id=8110 known=true state=ACTIVE
+11:23:08.760 [36mINFO[0m SEND bytes=0 cmd=SwitchHandDataScRsp cmd_id=8104
+11:23:09.194 [36mINFO[0m gameserver disconnected dur_ms=40779 remote=127.0.0.1:59063
+11:23:13.549 [36mINFO[0m shutdown requested
