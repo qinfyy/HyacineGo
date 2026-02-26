@@ -10,5 +10,5 @@ type NpcMonsterDataRow struct {
 type NpcMonsterDataTable map[int]*NpcMonsterDataRow
 
 type TextMapRef struct {
-	Hash HashU64 `json:"Hash"`
+	Hash Hash `json:"Hash"`
 }

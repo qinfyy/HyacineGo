@@ -21,7 +21,7 @@ func BuildRuntimeEntities(gd *data.GameData, floorID uint32, p *player.Player, n
 	}
 
 	propExcel, _ := gd.MazeProp()
-	npcExcel, _ := gd.NpcData()
+	//npcExcel, _ := gd.NpcData()
 	mainMissionSchedule, _ := gd.MainMissionScheduleIDs()
 
 	worldLevel := uint32(0)
@@ -64,7 +64,8 @@ func BuildRuntimeEntities(gd *data.GameData, floorID uint32, p *player.Player, n
 			if mainMissionSchedule != nil && group.OwnerMainMissionID > 0 {
 				_, isEventProp = mainMissionSchedule[uint32(group.OwnerMainMissionID)]
 			}
-			if prop.IsDelete {
+
+			if !isEventProp && (prop.IsDelete || prop.IsClientOnly) {
 				continue
 			}
 
@@ -76,12 +77,14 @@ func BuildRuntimeEntities(gd *data.GameData, floorID uint32, p *player.Player, n
 				continue
 			}
 
-			// Default state logic follows 3.8.0 EntityProp + SceneEntityLoader special cases.
-			propState := uint32(0) // Closed
-			if excel.IsDoor() || excel.IsStaircase() || strings.EqualFold(excel.PropType, "PROP_SPRING") || isEventProp {
-				propState = 8 // Open in client enum mapping used by packet traces
+			propState := uint32(0)
+			if excel.IsDoor() ||
+				excel.IsStaircase() ||
+				strings.EqualFold(excel.PropType, "PROP_SPRING") ||
+				isEventProp {
+				propState = 8
 			}
-			// Special hardcoded cases from Java SceneEntityLoader.
+
 			if prop.PropID == 1003 {
 				if prop.MappingInfoID == 2220 {
 					propState = 8
@@ -96,8 +99,16 @@ func BuildRuntimeEntities(gd *data.GameData, floorID uint32, p *player.Player, n
 				}
 			}
 
-			pos := &pb.Vector{X: int32(prop.PosX * coordScale), Y: int32(prop.PosY * coordScale), Z: int32(prop.PosZ * coordScale)}
-			rot := &pb.Vector{X: int32(prop.RotX * coordScale), Y: int32(prop.RotY * coordScale), Z: int32(prop.RotZ * coordScale)}
+			pos := &pb.Vector{
+				X: int32(prop.PosX * coordScale),
+				Y: int32(prop.PosY * coordScale),
+				Z: int32(prop.PosZ * coordScale),
+			}
+			rot := &pb.Vector{
+				X: int32(prop.RotX * coordScale),
+				Y: int32(prop.RotY * coordScale),
+				Z: int32(prop.RotZ * coordScale),
+			}
 
 			e := &pb.SceneEntityInfo{
 				EntityId: nextEntityID,
@@ -112,39 +123,67 @@ func BuildRuntimeEntities(gd *data.GameData, floorID uint32, p *player.Player, n
 					},
 				},
 			}
+
 			nextEntityID++
 			entityList = append(entityList, e)
 			groupToEntities[groupID] = append(groupToEntities[groupID], e)
 		}
 
-		// NPCs.
-		for _, npc := range group.NPCList {
-			if npc.IsDelete || npc.ID == 0 {
-				continue
-			}
-			if npcExcel != nil {
-				if _, ok := npcExcel[uint32(npc.NPCID)]; !ok {
-					continue
-				}
-			}
-			pos := &pb.Vector{X: int32(npc.PosX * coordScale), Y: int32(npc.PosY * coordScale), Z: int32(npc.PosZ * coordScale)}
-			rot := &pb.Vector{X: 0, Y: int32(npc.RotY * coordScale), Z: 0}
-
-			e := &pb.SceneEntityInfo{
-				EntityId: nextEntityID,
-				GroupId:  groupID,
-				InstId:   uint32(npc.ID),
-				Motion:   &pb.MotionInfo{Pos: pos, Rot: rot},
-				Entity: &pb.SceneEntityInfo_Npc{
-					Npc: &pb.SceneNpcInfo{
-						NpcId: uint32(npc.NPCID),
-					},
-				},
-			}
-			nextEntityID++
-			entityList = append(entityList, e)
-			groupToEntities[groupID] = append(groupToEntities[groupID], e)
-		}
+		//loadedNpcIDs := make(map[uint32]struct{})
+		//for _, npc := range group.NPCList {
+		//	if npc.ID == 0 {
+		//		continue
+		//	}
+		//
+		//	isEventGroup := false
+		//	if mainMissionSchedule != nil && group.OwnerMainMissionID > 0 {
+		//		_, isEventGroup = mainMissionSchedule[uint32(group.OwnerMainMissionID)]
+		//	}
+		//
+		//	if !isEventGroup && (npc.IsDelete || npc.IsClientOnly) {
+		//		continue
+		//	}
+		//
+		//	if npcExcel != nil {
+		//		if _, ok := npcExcel[uint32(npc.NPCID)]; !ok {
+		//			continue
+		//		}
+		//	}
+		//
+		//	npcID := uint32(npc.NPCID)
+		//
+		//	if _, exists := loadedNpcIDs[npcID]; exists {
+		//		continue
+		//	}
+		//	loadedNpcIDs[npcID] = struct{}{}
+		//
+		//	pos := &pb.Vector{
+		//		X: int32(npc.PosX * coordScale),
+		//		Y: int32(npc.PosY * coordScale),
+		//		Z: int32(npc.PosZ * coordScale),
+		//	}
+		//	rot := &pb.Vector{
+		//		X: 0,
+		//		Y: int32(npc.RotY * coordScale),
+		//		Z: 0,
+		//	}
+		//
+		//	e := &pb.SceneEntityInfo{
+		//		EntityId: nextEntityID,
+		//		GroupId:  groupID,
+		//		InstId:   uint32(npc.ID),
+		//		Motion:   &pb.MotionInfo{Pos: pos, Rot: rot},
+		//		Entity: &pb.SceneEntityInfo_Npc{
+		//			Npc: &pb.SceneNpcInfo{
+		//				NpcId: npcID,
+		//			},
+		//		},
+		//	}
+		//
+		//	nextEntityID++
+		//	entityList = append(entityList, e)
+		//	groupToEntities[groupID] = append(groupToEntities[groupID], e)
+		//}
 
 		// Monsters.
 		for _, m := range group.MonsterList {

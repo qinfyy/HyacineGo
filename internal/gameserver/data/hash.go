@@ -3,41 +3,34 @@ package data
 import (
 	"encoding/json"
 	"fmt"
-	"math"
+	"math/big"
+	"strings"
 )
 
-// HashU64 is a compatibility wrapper for textmap/hash fields.
-//
-// Some resource dumps encode 32-bit hashes as signed integers (e.g. -712088400).
-// Official servers treat these as unsigned (uint32) hashes. This type accepts
-// both signed/unsigned JSON numbers and normalizes them into an unsigned value.
-type HashU64 uint64
+// Hash is a compatibility wrapper for textmap/hash fields.
+type Hash struct{ *big.Int }
 
-func (h *HashU64) UnmarshalJSON(b []byte) error {
-	// Try number first.
-	var n int64
-	if err := json.Unmarshal(b, &n); err == nil {
-		if n < 0 {
-			if n < math.MinInt32 {
-				return fmt.Errorf("hash out of int32 range: %d", n)
-			}
-			*h = HashU64(uint64(uint32(int32(n))))
-			return nil
-		}
-		*h = HashU64(uint64(n))
-		return nil
+func (h *Hash) UnmarshalJSON(b []byte) error {
+	if h.Int == nil {
+		h.Int = new(big.Int)
 	}
 
-	// Some dumps may encode hashes as strings.
+	var num json.Number
+	if err := json.Unmarshal(b, &num); err == nil {
+		str := num.String()
+		if _, ok := h.Int.SetString(str, 10); ok {
+			return nil
+		}
+	}
+
 	var s string
 	if err := json.Unmarshal(b, &s); err == nil {
-		var u uint64
-		if _, err := fmt.Sscanf(s, "%d", &u); err == nil {
-			*h = HashU64(u)
+		s = strings.TrimSpace(s)
+		if _, ok := h.Int.SetString(s, 10); ok {
 			return nil
 		}
 		return fmt.Errorf("invalid hash string: %q", s)
 	}
 
-	return fmt.Errorf("invalid hash: %s", string(b))
+	return fmt.Errorf("invalid hash value: %s", string(b))
 }

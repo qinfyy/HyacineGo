@@ -19,13 +19,60 @@ func NewLoader(path string) (*Loader, error) {
 	return &Loader{path: path}, nil
 }
 
+func defaultConfig() Config {
+	autoReply := true
+	return Config{
+		Admin: Admin{
+			Addr: "127.0.0.1:18080",
+		},
+		Dispatch: Dispatch{
+			Addr:              "0.0.0.0:21000",
+			HotfixPath:        "./hotfix.json",
+			FreesrDir:         "./configs/freesr-data.json",
+			CorsOrigin:        "*",
+			AccountPath:       "./configs/accounts.json",
+			AutoCreateAccount: true,
+		},
+		GameServer: GameServer{
+			Addr:          "0.0.0.0:23301",
+			Protocol:      "tcp",
+			ResourceRoot:  "./resources",
+			MaxFrameBytes: 1024 * 1024,
+		},
+		Logging: Logging{
+			Level:  "debug",
+			Format: "pretty",
+			File:   "",
+		},
+		Debug: Debug{
+			LogPackets:        true,
+			LogUnknownPackets: true,
+			AutoReplyUnknown:  &autoReply,
+			AutoCreateAccount: true,
+		},
+		LoadedAt: time.Now(),
+	}
+}
+
 func (l *Loader) Load() (Config, error) {
 	raw, err := os.ReadFile(l.path)
 	if err != nil {
+		if os.IsNotExist(err) {
+			cfg := defaultConfig()
+			data, _ := json.MarshalIndent(cfg, "", "  ")
+			if err := os.WriteFile(l.path, data, 0644); err != nil {
+				return cfg, fmt.Errorf("failed to create default config: %w", err)
+			}
+			return cfg, nil
+		}
 		return Config{}, err
 	}
 
 	var cfg Config
+	if err := json.Unmarshal(raw, &cfg); err != nil {
+		return Config{}, err
+	}
+
 	if err := json.Unmarshal(raw, &cfg); err != nil {
 		return Config{}, err
 	}

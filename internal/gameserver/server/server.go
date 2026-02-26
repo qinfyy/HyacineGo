@@ -373,7 +373,7 @@ func (s *Server) handlePacket(sess *session, cmdID uint16, payload []byte) {
 	ps.LastActive = time.Now()
 
 	if logPackets {
-		slog.Info("RECV", "cmd", packet.Name(cmdID), "cmd_id", cmdID, "bytes", len(payload), "state", ps.State.String())
+		slog.Info("RECV", "cmd", packet.Name(cmdID), "cmd_id", cmdID, "bytes", len(payload), "state", ps.State.String(), "pack")
 	}
 	if s.tracer != nil {
 		s.tracer.Write(trace.Event{Dir: "RECV", CmdID: cmdID, Cmd: packet.Name(cmdID), Known: packet.Known(cmdID), Bytes: len(payload), State: ps.State.String()})

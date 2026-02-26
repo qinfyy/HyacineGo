@@ -1,7 +1,7 @@
 package data
 
 type HashText struct {
-	Hash HashU64 `json:"Hash"`
+	Hash Hash `json:"Hash"`
 }
 
 type MazePlaneRow struct {

@@ -2,13 +2,12 @@ package scene
 
 import (
 	"fmt"
-	"log/slog"
-	"time"
-
 	"hyacine-server/internal/gameserver/data"
 	"hyacine-server/internal/gameserver/game/player"
 	"hyacine-server/internal/gameserver/game/player/lineup"
 	pb "hyacine-server/internal/proto/gen"
+	"log/slog"
+	"time"
 )
 
 // DefaultScene is a minimal scene snapshot for the client to finish loading.
@@ -225,6 +224,7 @@ func BuildSceneInfoForPlayerWithData(gd *data.GameData, s DefaultScene, uid uint
 			slog.Debug("加载楼层资源失败", "floorID", s.FloorID, "error", err)
 		}
 
+		//ents, entityGroups, groupStates := BuildRuntimeEntities(gd, s.FloorID, p, time.Now())
 		ents, entityGroups, groupStates := BuildRuntimeEntities(gd, s.FloorID, p, time.Now())
 		if ents != nil {
 			sceneInfo.EntityList = append(sceneInfo.EntityList, ents...)

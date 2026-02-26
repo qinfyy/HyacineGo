@@ -1,6 +1,6 @@
 {
-  "uid": 0,
-  "account_uid": "",
+  "uid": 2,
+  "account_uid": "1766524402225414000",
   "nickname": "Hyacine",
   "gender": 2,
   "last_set_nickname_time_ms": 0,
@@ -31,13 +31,13 @@
   "owned_chat_bubbles": [],
   "owned_phone_themes": [],
   "owned_phone_cases": [],
-  "entry_id": 2050201,
-  "plane_id": 20502,
-  "floor_id": 20502001,
+  "entry_id": 2050301,
+  "plane_id": 20503,
+  "floor_id": 20503001,
   "teleport_id": 1031,
-  "x": -23790,
-  "y": 1903,
-  "z": -64760,
+  "x": 49087,
+  "y": 9648,
+  "z": 136907,
   "calyx_x": 0,
   "calyx_y": 0,
   "calyx_z": 0,
@@ -53,88 +53,16 @@
       "name": "Team 1",
       "leader_slot": 0,
       "avatar_ids": [
-        8006,
-        1321,
-        1310,
-        1225
+        8001
       ],
       "mp": 5,
       "max_mp": 5
-    },
-    "1": {
-      "index": 1,
-      "name": "Team 2",
-      "leader_slot": 0,
-      "avatar_ids": [
-        8006,
-        1321,
-        1310,
-        1225
-      ],
-      "mp": 5,
-      "max_mp": 5
-    },
-    "2": {
-      "index": 2,
-      "name": "Team 3",
-      "leader_slot": 0,
-      "avatar_ids": null,
-      "mp": 5,
-      "max_mp": 5
-    },
-    "3": {
-      "index": 3,
-      "name": "Team 4",
-      "leader_slot": 0,
-      "avatar_ids": null,
-      "mp": 5,
-      "max_mp": 5
-    },
-    "4": {
-      "index": 4,
-      "name": "Team 5",
-      "leader_slot": 0,
-      "avatar_ids": null,
-      "mp": 5,
-      "max_mp": 5
-    },
-    "5": {
-      "index": 5,
-      "name": "Team 6",
-      "leader_slot": 0,
-      "avatar_ids": null,
-      "mp": 5,
-      "max_mp": 5
-    },
-    "6": {
-      "index": 6,
-      "name": "Team 7",
-      "leader_slot": 0,
-      "avatar_ids": null,
-      "mp": 5,
-      "max_mp": 5
-    },
-    "7": {
-      "index": 7,
-      "name": "Team 8",
-      "leader_slot": 0,
-      "avatar_ids": null,
-      "mp": 5,
-      "max_mp": 5
-    },
-    "8": {
-      "index": 8,
-      "name": "Team 9",
-      "leader_slot": 0,
-      "avatar_ids": null,
-      "mp": 5,
-      "max_mp": 5
-    },
+    }
+  },
   "avatar_enhanced_ids": {},
   "current_multi_path": {
-    "8001": 8006
+    "8001": 8001
   },
-  "created_at": "2026-01-31T10:40:17.2243896-08:00",
-  "updated_at": "2026-01-31T11:06:37.4422878-08:00"
-}
+  "created_at": "2026-02-25T02:13:30.1569648+08:00",
+  "updated_at": "2026-02-25T02:38:16.4239313+08:00"
 }

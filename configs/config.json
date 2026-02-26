@@ -5,7 +5,7 @@
   "dispatch": {
     "addr": "0.0.0.0:21000",
     "hotfix_path": "./hotfix.json",
-    "freesr_dir": "./configs/freesr-data.json",
+    "freesr_dir": "./configs/freesr-data.json1",
     "cors_origin": "*",
     "account_path": "./configs/accounts.json",
     "auto_create_account": true
@@ -14,10 +14,10 @@
     "addr": "0.0.0.0:23301",
     "protocol": "tcp",
     "max_frame_bytes": 1048576,
-    "resource_root": "./resources"
+    "resource_root": "D:\\Games\\StarRail\\LunarCore\\Resources4000"
   },
   "logging": {
-    "level": "info",
+    "level": "debug",
     "format": "pretty",
     "file": "./logs/server.log"
   },
@@ -26,7 +26,8 @@
     "log_packets": true,
     "log_unknown_packets": true,
     "auto_reply_unknown": true,
-    "login_extra_send_cmd_ids": [],
+    "send_client_download_data": false,
+    "login_extra_send_cmd_ids": null,
     "trace_file": "./logs/packet-trace.jsonl"
   }
 }
